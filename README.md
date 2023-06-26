@@ -1,4 +1,4 @@
-# Selfpy
+# diself
 
 ![Python version](https://img.shields.io/badge/Python-3.11%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
@@ -14,7 +14,7 @@ The selfbot module provides functionality for interacting with the Discord API u
 Install the selfbot module using `pip`:
 
 ```python
-pip install selfpy
+pip install diself
 ```
 
 ## Setup
@@ -29,12 +29,12 @@ pip install selfpy
 
 2. Create a Python script and import the `selfbot_module`:
 ```python
-import selfpy
+import diself
 ```
 3. Instantiate the `Client` class with your Discord user token:
 
 ```python
-client = selfpy.Client("YOUR_USER_TOKEN")
+client = diself.Client("YOUR_USER_TOKEN")
 ```
 
 4. Implement your desired functionality using the provided methods and events.
@@ -42,9 +42,9 @@ client = selfpy.Client("YOUR_USER_TOKEN")
 ## Usage
 
 ```python
-import selfpy
+import diself
 
-@selfpy.event
+@diself.event
 def on_messages(msg):
     print(msg) # print the raw message json
     print(msg.content) # print the message content
@@ -54,11 +54,11 @@ def on_messages(msg):
     message=chid.send("hey") # Send the message "key" to the channel
     message.delete() # Delete the message
 
-@selfpy.event
+@diself.event
 def on_ready():
   print(f"Connected to '{client.username}#{client.discriminator}' ({client.id})") # Print this in the cmd when the client is ready
 
-client = selfpy.Client("YOUR_USER_TOKEN")
+client = diself.Client("YOUR_USER_TOKEN")
 ```
 
 ## Liscense
