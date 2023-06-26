@@ -45,7 +45,7 @@ client = selfpy.Client("YOUR_USER_TOKEN")
 import selfpy
 
 @selfpy.event
-  def on_messages(msg):
+def on_messages(msg):
     print(msg) # print the raw message json
     print(msg.content) # print the message content
     print(msg.channel) # print the message channel
