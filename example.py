@@ -1,6 +1,6 @@
-import selfpy
+import diself
 
-@selfpy.event
+@diself.event
 def on_messages(msg):
     print(msg) # print the raw message json
     print(msg.content) # print the message content
@@ -10,8 +10,8 @@ def on_messages(msg):
     message=chid.send("hey") # Send the message "key" to the channel
     message.delete() # Delete the message
 
-@selfpy.event
+@diself.event
 def on_ready():
   print(f"Connected to '{client.username}#{client.discriminator}' ({client.id})") # Print this in the cmd when the client is ready
 
-client = selfpy.Client("YOUR_USER_TOKEN")
+client = diself.Client("YOUR_USER_TOKEN")
