@@ -44,7 +44,7 @@ client = selfpy.Client("YOUR_USER_TOKEN")
 ```python
 import selfpy
 
-@selfbot.event
+@selfpy.event
   def on_messages(msg):
     print(msg) # print the raw message json
     print(msg.content) # print the message content
