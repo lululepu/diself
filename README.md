@@ -14,7 +14,7 @@ The selfbot module provides functionality for interacting with the Discord API u
 Install the selfbot module using `pip`:
 
 ```python
-pip install selfbot-module
+pip install selfpy
 ```
 
 ## Setup
