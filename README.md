@@ -45,7 +45,7 @@ client = diself.Client("YOUR_USER_TOKEN")
 import diself
 
 @diself.event
-def on_messages(msg):
+def on_message(msg):
     print(msg) # print the raw message json
     print(msg.content) # print the message content
     print(msg.channel) # print the message channel
