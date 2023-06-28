@@ -55,6 +55,13 @@ def on_message(msg):
     message.delete() # Delete the message
 
 @diself.event
+def on_message_delete(msg):
+  print(msg) # print the raw message json (only the id/channel id)
+  print(msg.channel) # print the message channel 
+    
+
+
+@diself.event
 def on_ready():
   print(f"Connected to '{client.username}#{client.discriminator}' ({client.id})") # Print this in the cmd when the client is ready
 
